@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header class="header">
         <a href="index.html" class="header_link">狐乃宮夕絃&emsp;非公式Wiki</a>
         <nav>
+            <input type="checkbox" id="nav_toggle" class="nav_toggle">
+            <label for="nav_toggle" class="nav_btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </label>
+            <label for="nav_toggle" class="nav_overlay"></label>
             <ul class="nav_list">
                 <li class="list_item"><a href="about.html" class="list_link">HOME</a></li>
                 <li class="list_item"><a href="song_list.html" class="list_link">SONG LIST</a></li>
@@ -33,4 +40,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
