@@ -318,7 +318,7 @@ iframe {
     align-items: center ;
     gap: 1em;
     padding: 1em 0;
-    margin: 1em auto;
+    margin: 1em auto 0;
     width: 100%;
 }
 
@@ -388,7 +388,12 @@ iframe {
         flex-direction: row;
         visibility: visible;
         background: transparent;
+        gap: 2em;
         padding: 0;
+    }
+
+    .list_item {
+        padding: .8em 0;
     }
 
     .flex-box {
@@ -432,7 +437,7 @@ iframe {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 4em;
+        gap: 2em;
     }
 
     .footer a {
@@ -501,7 +506,7 @@ iframe {
 
     .footer {
         justify-content: space-between;
-        padding: 1em 6em;
+        padding: 1em 5%;
     }
 
 
