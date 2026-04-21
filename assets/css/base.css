@@ -10,11 +10,18 @@
 
 /* base style */
 
+:root {
+    --txt-color: #333;
+    --default-font-size: 15px;
+    --header-height: 72px;
+    --main-shadow-color: rgba(0, 0, 0, .14);
+}
+
 body {
     font-family: "ZEN OLD MINCHO", Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: var(--default-font-size);
     line-height: 1.5;
-    color: #333;
+    color: var(--txt-color);
     width: 100%;
     min-width: 320px;
     position: relative;
@@ -24,7 +31,16 @@ main {
     background: #fff;
     display: flex;
     flex-direction: column;
-    margin-top: 72px;
+    margin-top: var(--header-height);
     width: 100%;
     height: auto;
+}
+
+a,img,span {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--txt-color);
 }

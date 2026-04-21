@@ -19,7 +19,7 @@
     color: #333;
 }
 
-.footer_list {
+.foot-list {
     display: flex;
     flex-direction: column;
 }
@@ -46,11 +46,11 @@
         margin: 0;
     }
 
-    .footer_item {
+    .foot-item {
         padding: 0;
     }
 
-    .footer_list {
+    .foot-list {
         display: flex;
         flex-direction: row;
         gap: 2em;
