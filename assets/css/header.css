@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+.header {
+    background: #fff;
+    display: flex;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    width: 100%;
+    height: 72px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, .2);
+}
+
+.header_link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #333;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+}
+
+.header_link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width .3s ease;
+}
+
+.header_link:hover::after {
+    width: 100%;
+}
+
+.nav {
+    position: relative;
+    margin-left: 0;
+}
+
+.nav_toggle {
+    display: none;
+}
+
+.nav_btn {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-right: 1.5em;
+    position: relative;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: .4s;
+}
+
+.nav_btn:hover,
+.nav_btn:focus {
+    background: rgba(126, 208, 255, .2);
+}
+
+.nav_btn span {
+    background: #000;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    transition: .25s ease;
+}
+
+.nav_btn span:nth-child(1) {
+    top: 14px;
+}
+
+.nav_btn span:nth-child(2) {
+    top: 21px;
+}
+
+.nav_btn span:nth-child(3) {
+    top: 28px;
+}
+
+.nav_overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .2);
+    pointer-events: none;
+    transition: opacity .25s ease;
+    z-index: 5;
+    opacity: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav_list {
+    background: #fff;
+    width: 50%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 72px;
+    right: 0;
+    bottom: 0;
+    gap: 0;
+    padding: 1em 0;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease ;
+    z-index: 10;
+}
+
+.nav_toggle:checked~.nav_overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav_toggle:checked~.nav_list {
+    opacity: 1;
+    transform: scaleX(1);
+    pointer-events: auto;
+    transition-delay: .25s;
+}
+
+.nav_toggle:checked+.nav_btn span:nth-child(1) {
+    top: 21px;
+    transform: rotate(45deg);
+}
+
+.nav_toggle:checked+.nav_btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav_toggle:checked+.nav_btn span:nth-child(3) {
+    top: 21px;
+    transform: rotate(-45deg);
+}
+
+.list_item {
+    padding: .8em 2em;
+}
+
+.list_link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 900;
+    position: relative;
+}
+
+.list_link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width .3s ease;
+}
+
+.list_link:hover::after {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+        gap: 2em;
+    }
+
+    .header_link {
+        display: block;
+        margin: 0;
+    }
+
+    .nav_toggle:checked~.nav_list {
+        transform: none !important;
+        opacity: 1;
+    }
+
+    .nav_overlay,
+    .nav_toggle:checked~.nav_overlay {
+        display: none !important;
+    }
+
+    .nav_btn {
+        display: none !important;
+    }
+
+    .nav_list {
+        position: static;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+        display: flex;
+        flex-direction: row;
+        visibility: visible;
+        background: transparent;
+        gap: 2em;
+        padding: 0;
+    }
+
+    .list_item {
+        padding: .8em 0;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    
+    .header {
+        justify-content: space-between;
+    }
+
+}
