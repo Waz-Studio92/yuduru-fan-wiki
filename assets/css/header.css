@@ -1,18 +1,19 @@
 @charset "utf-8";
 
 .header {
-    background: #fff;
+    background: var(--bg-white);
     display: flex;
     margin: 0 auto;
-    padding: 1.5em 2rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     width: 100%;
-    height: 72px;
+    height: var(--header-height);
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    box-shadow: 0 14px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 14px 20px var(--sub-shadow-color);
 }
 
 .head-top-link {
@@ -41,8 +42,8 @@
 }
 
 .nav {
-    position: relative;
-    margin-left: 0;
+    width: fit-content;
+    margin-left: auto;
 }
 
 .nav-toggle {
@@ -53,7 +54,6 @@
     display: block;
     width: 44px;
     height: 44px;
-    margin-right: 1.5em;
     position: relative;
     cursor: pointer;
     border-radius: 7px;
@@ -89,7 +89,7 @@
 .nav-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, .2);
+    background: var(--sub-shadow-color);
     pointer-events: none;
     transition: opacity .25s ease;
     z-index: 5;

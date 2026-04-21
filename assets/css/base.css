@@ -12,9 +12,12 @@
 
 :root {
     --txt-color: #333;
+    --bg-white: #fff;
     --default-font-size: 15px;
     --header-height: 72px;
     --main-shadow-color: rgba(0, 0, 0, .14);
+    --sub-shadow-color: rgba(0, 0, 0, .2);
+    --border-color: rgba(0, 0, 0, .8);
 }
 
 body {
@@ -28,12 +31,13 @@ body {
 }
 
 main {
-    background: #fff;
+    background: var(--bg-white);
     display: flex;
     flex-direction: column;
     margin-top: var(--header-height);
     width: 100%;
     height: auto;
+    min-height: 100vh;
 }
 
 a,img,span {
@@ -43,4 +47,8 @@ a,img,span {
 a {
     text-decoration: none;
     color: var(--txt-color);
+}
+
+ul {
+    list-style: none;
 }
