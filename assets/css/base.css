@@ -18,6 +18,7 @@
     --main-shadow-color: rgba(0, 0, 0, .14);
     --sub-shadow-color: rgba(0, 0, 0, .2);
     --border-color: rgba(0, 0, 0, .8);
+    --nav-list-width: 50%;
 }
 
 body {

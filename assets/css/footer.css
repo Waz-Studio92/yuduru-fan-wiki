@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center ;
     gap: 1em;
-    padding: 1em 0;
+    padding: 1em 2rem;
     margin: 1em auto 0;
     width: 100%;
 }
@@ -51,23 +51,13 @@
     .footer {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 2em;
+        justify-content: space-between;
     }
 
     .foot-list {
         display: flex;
         flex-direction: row;
         gap: 2em;
-    }
-
-}
-
-@media screen and (min-width:1024px) {
-    
-    .footer {
-        justify-content: space-between;
-        padding: 1em 5%;
     }
 
 }
