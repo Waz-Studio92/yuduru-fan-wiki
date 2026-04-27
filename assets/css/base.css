@@ -11,8 +11,9 @@
 /* base style */
 
 :root {
-    --txt-color: #333;
     --bg-white: #fff;
+    --txt-color: #333;
+    --sub-color: #fff;
     --default-font-size: 15px;
     --header-height: 72px;
     --main-shadow-color: rgba(0, 0, 0, .14);
