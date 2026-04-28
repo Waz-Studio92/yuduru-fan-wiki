@@ -43,4 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, {passive: false});
     }
+
+    function setAccordion() {
+
+        const titles = document.querySelector('.accordion-title');
+
+        titles.forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+
+                content.classList.toggle('is-open');
+            });
+        });
+    }
+
 });
