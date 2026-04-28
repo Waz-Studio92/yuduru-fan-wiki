@@ -39,9 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.addEventListener('touchmove', (e) => {
             if (navToggle.checked) {
+                console.log('チェック状態:', navToggle.checked);
                 e.preventDefault();
             }
-        }, {passive: false});
+        }, {
+            passive: false
+        });
     }
 
     function setAccordion() {
@@ -50,9 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         titles.forEach(title => {
             title.addEventListener('click', () => {
-                const content = title.nextElementSibling;
+                console.log(`title ${index} clicked!`);
 
-                content.classList.toggle('is-open');
+                const content = title.nextElementSibling;
+                console.log("Content element:", content);
+
+                if (content) {
+                    content.classList.toggle('is-open');
+                    console.log("Class toggled!");
+                } else {
+                    console.log("Error: Content not found for is title.");
+                }
             });
         });
     }
