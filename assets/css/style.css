@@ -15,6 +15,7 @@ body.is-active {
     margin: 0 auto;
     width: 50%;
     height: auto;
+    max-height: 800px;
 }
 
 .main_title {
@@ -24,7 +25,7 @@ body.is-active {
     gap: 1.5rem;
     font-size: 2em;
     color: var(--text-color);
-    margin: 0 5rem 0 auto;
+    margin: 0 auto;
     padding: 1em;
     width: fit-content;
     min-width: 300px;
@@ -60,12 +61,14 @@ body.is-active {
     display: flex;
     width: 150px;
     padding: 7px 30px;
+    justify-content: center;
     border: 2px solid var(--txt-color);
     border-radius: 50px;
     gap: 0.5rem;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    margin: 0 auto;
 }
 
 .sns-link::after {
@@ -91,12 +94,12 @@ body.is-active {
     z-index: 2;
 }
 
-.sns-txt {
+.sns-txt,.sns-text {
     color: var(--sub-color);
     z-index: 2;
 }
 
-.sns-img,.sns-txt {
+.sns-img,.sns-txt,.sns-text {
     transition: .3s ease;
 }
 
@@ -104,8 +107,32 @@ body.is-active {
     filter: brightness(1) invert(1);
 }
 
-.sns-link:hover .sns-txt {
+.sns-link:hover .sns-txt,
+.sns-link:hover .sns-text {
     color: var(--txt-color);
+}
+
+.link-sec {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.link-content {
+    background-color: #ccc;
+    margin: 0 auto;
+    padding: 5px 10px;
+    width: fit-content;
+    text-align: center;
+}
+
+.link-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
 }
 
 @media screen and (max-width:440px) {
@@ -214,6 +241,56 @@ iframe {
     text-align: center;
     margin: 2rem auto 0;
 }
+
+.tags {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.tags-txt {
+    background-color: #ccc;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 5px 10px;
+}
+
+.tags-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.tags-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.tags-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tags-content {
+    margin-top: 1rem;
+    padding: 0 0 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tags-content:first-child {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
 
 @media screen and (min-width: 768px) {
 

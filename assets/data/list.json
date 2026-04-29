@@ -3,132 +3,231 @@
         {
             "title": "天体観測",
             "artist": "BUMP OF CHICKEN",
-            "tieup": "",
+            "kana": "てんたいかんそく",
+            "tieup": "関西テレビ・フジテレビ系ドラマ「天体観測」挿入歌",
             "produce": ""
         },
         {
             "title": "カルマ",
             "artist": "BUMP OF CHICKEN",
-            "tieup": "tales of the abyss",
+            "kana": "",
+            "tieup": "TVゲーム / Tales of the Abyss",
             "produce": ""
         },
         {
-            "title": "Hello World",
+            "title": "Hello,world!",
             "artist": "BUMP OF CHICKEN",
+            "kana": "はろーわーるど",
+            "tieup": "TVアニメ / 血界戦線 ED主題歌",
+            "produce": ""
+        },
+        {
+            "title": "アカシア",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "ポケモンスペシャルMV「GOTCHA！」テーマソング",
+            "produce": ""
+        },
+        {
+            "title": "SOUVENIR",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "すーべにあ",
+            "tieup": "TVアニメ / 『SPY✕FAMILY』第2クールOP主題歌",
+            "produce": ""
+        },
+        {
+            "title": "66号線",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "ray",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "れい",
+            "tieup": "feat.初音ミク",
+            "produce": ""
+        },
+        {
+            "title": "なないろ",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "NHK連続テレビ小説『おかえりモネ』",
+            "produce": ""
+        },
+        {
+            "title": "Aurora",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "TBS系 日曜劇場「グッドワイフ」主題歌",
+            "produce": ""
+        },
+        {
+            "title": "真っ赤な空を見ただろうか",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "まっかなそらをみただろうか",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "涙のふるさと",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "なみだのふるさと",
+            "tieup": "LOTTE airs「エアーズ」CMタイアップ楽曲",
+            "produce": ""
+        },
+        {
+            "title": "Butterfly",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "supernova",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "飴玉の唄",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "宇宙飛行士への手紙",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "うちゅうひこうしへのてがみ",
+            "tieup": "フジテレビ系トークドキュメンタリー番組『1924』2ndシーズンEDテーマソング",
+            "produce": ""
+        },
+        {
+            "title": "スノースマイル",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "LOTTE airs「エアーズ」CMタイアップ楽曲",
+            "produce": ""
+        },
+        {
+            "title": "アリア",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "TBS系日曜劇場『仰げば尊し』主題歌",
+            "produce": ""
+        },
+        {
+            "title": "Flare",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "ガラスのブルース",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "オンリーロンリーグローリー",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "LOTTE キシリトールガム「エアーズ」CMソング",
+            "produce": ""
+        },
+        {
+            "title": "K",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "ラフメイカー",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "花の名",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "はなのな",
+            "tieup": "『ALWAYS続・三丁目の夕日』主題歌",
+            "produce": ""
+        },
+        {
+            "title": "HAPPY",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "フジテレビ系番組「1924」EDテーマソング",
+            "produce": ""
+        },
+        {
+            "title": "サザンクロス",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "",
+            "produce": ""
+        },
+        {
+            "title": "メーデー",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
+            "tieup": "2024年 / トランスフォーマー40周年スペシャルムービー",
+            "produce": ""
+        },
+        {
+            "title": "",
+            "artist": "BUMP OF CHICKEN",
+            "kana": "",
             "tieup": "",
             "produce": ""
         },
         {
             "title": "",
             "artist": "BUMP OF CHICKEN",
+            "kana": "",
             "tieup": "",
             "produce": ""
         },
         {
             "title": "",
             "artist": "BUMP OF CHICKEN",
+            "kana": "",
             "tieup": "",
             "produce": ""
         },
         {
             "title": "",
             "artist": "BUMP OF CHICKEN",
+            "kana": "",
             "tieup": "",
             "produce": ""
         },
         {
             "title": "",
             "artist": "BUMP OF CHICKEN",
+            "kana": "",
             "tieup": "",
             "produce": ""
         },
         {
             "title": "",
             "artist": "BUMP OF CHICKEN",
+            "kana": "",
             "tieup": "",
             "produce": ""
         },
         {
             "title": "",
             "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
-            "tieup": "",
-            "produce": ""
-        },
-        {
-            "title": "",
-            "artist": "BUMP OF CHICKEN",
+            "kana": "",
             "tieup": "",
             "produce": ""
         }

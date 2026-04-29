@@ -7,15 +7,26 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
 
-            const songs = data.songs;
+                const songs = data.songs;
 
-            songs.sort((a,b) => {
-                return (b.tieup !== "") - (a.tieup !== "");
-            });
+                songs.sort((a, b) => {
+                    const tieupA = a.tieup && a.tieup.trim() !== "";
+                    const tieupB = b.tieup && b.tieup.trim() !== "";
+
+                    if (tieupA !== tieupB) {
+                        return tieupB - tieupA;
+                    }
+
+                    return a.title.localeCompare(b.title, 'ja', {
+                        numeric: true
+                    });
+                });
 
                 songs.forEach(item => {
 
-                    // divにデータを放り込む
+                    if (!item.title || item.title.trim() === "") {
+                        return
+                    } // divにデータを放り込む
                     const row = document.createElement('tr');
 
                     // データの送り先は <div class="content-table">

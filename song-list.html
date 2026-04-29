@@ -15,7 +15,25 @@
 <body>
     <div id="header"></div>
     <main>
-        <h1 class="page-title">song title</h1>
+        <section class="section page-top">
+            <div class="top-box">
+                <h1 class="page-title">過去に歌った曲リスト</h1>
+                <div id="modified">
+                    <p class="paragraph">Last-modified:</p>
+                    <time datetime="2026-04-28" class="time-code">2026-04-28(火)</time>
+                </div>
+            </div>
+        </section>
+        <div class="page-link-section">
+            <a href="index.html" class="page-link">
+                <div class="rectangle">
+                    <img src="assets/images/arrow.svg" alt="戻る">
+                </div>
+                <p>
+                    狐乃宮夕絃 非公式Wiki
+                </p>
+            </a>
+        </div>
         <section class="section bump">
             <ul class="song-list">
                 <li class="content-song">
@@ -24,9 +42,29 @@
                         <table id="content-table">
                             <thead>
                                 <tr>
-                                    <th>title</th>
-                                    <th>tieup</th>
-                                    <th>vocaloP</th>
+                                    <th>タイトル</th>
+                                    <th>タイアップ</th>
+                                    <th>ボカロP</th>
+                                </tr>
+                            </thead>
+                            <tbody id="song-list-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="section bump">
+            <ul class="song-list">
+                <li class="content-song">
+                    <div id="title" class="accordion-title">BUMP OF CHICKEN</div>
+                    <div class="content">
+                        <table id="content-table">
+                            <thead>
+                                <tr>
+                                    <th>タイトル</th>
+                                    <th>タイアップ</th>
+                                    <th>ボカロP</th>
                                 </tr>
                             </thead>
                             <tbody id="song-list-body">

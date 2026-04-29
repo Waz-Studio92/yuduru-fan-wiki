@@ -49,18 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setAccordion() {
 
-        const titles = document.querySelector('.accordion-title');
+        const titles = document.querySelectorAll('.accordion-title');
 
         titles.forEach(title => {
             title.addEventListener('click', () => {
-                console.log(`title ${index} clicked!`);
 
                 const content = title.nextElementSibling;
-                console.log("Content element:", content);
 
                 if (content) {
-                    content.classList.toggle('is-open');
-                    console.log("Class toggled!");
+                    content.classList.toggle('is-active');
                 } else {
                     console.log("Error: Content not found for is title.");
                 }
@@ -68,4 +65,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    setAccordion();
 });
