@@ -32,11 +32,22 @@ body {
     position: relative;
 }
 
+.fade {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fade.is-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 main {
     background: var(--bg-white);
     display: flex;
     flex-direction: column;
-    margin-top: var(--header-height);
+    padding-top: var(--header-height);
     width: 100%;
     height: auto;
     min-height: 100vh;

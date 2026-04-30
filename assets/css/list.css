@@ -133,6 +133,7 @@
     font-size: clamp(20px, 5vw, 25px);
     font-weight: 600;
     color: var(--sub-color);
+    border-radius: 10px 10px 0 0;
     transition: .4s ease;
     position: relative;
     z-index: 10;
