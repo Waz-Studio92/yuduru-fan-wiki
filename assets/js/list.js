@@ -26,10 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (!item.title || item.title.trim() === "") {
                         return
-                    } // divにデータを放り込む
+                    }
                     const row = document.createElement('tr');
 
-                    // データの送り先は <div class="content-table">
                     row.innerHTML = `
                         <td class="col-title">${item.title}</td>
                         <td class="col-up">${item.tieup}</td>
