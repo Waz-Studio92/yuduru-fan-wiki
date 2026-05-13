@@ -1,7 +1,10 @@
 function createNav(item) {
     const el = document.createElement(item.tag); //タグの作成
+    if (item.type) el.type = item.type;
+    if (item.id) el.id = item.id;
+    if (item.for) el.htmlFor = item.for;
     if (item.class) el.className = item.class; // クラスの付与
-    if (item.url) el.href = item.url // itemが(a タグなら)URLを付与する
+    if (item.url) el.href = item.url; // itemが(a タグなら)URLを付与する
     if (item.text) el.textContent = `${item.text}`; // 中の文字を付与
 
     if (item.children) {
@@ -26,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!configResponse.ok) throw new Error('Config load failed');
         const config = await configResponse.json();
 
-        config.headerContent.filter(item => item.tag === 'header' || item.tag === 'nav').forEach(item => {
+        config.headerContent.forEach(item => {
             const el = createNav(item);
             document.getElementById('header').appendChild(el);
         });
