@@ -18,6 +18,13 @@
                     ]}
                 ]},
                 {"tag": "nav","class": "nav","children": [
+                    { "tag": "input", "id": "nav-toggle", "class": "nav-toggle" },
+                    { "tag": "label", "for": "nav-toggle", "class": "nav-btn", "children": [
+                        {"tag": "span", "class": "nav-btn span"},
+                        {"tag": "span", "class": "nav-btn span"},
+                        {"tag": "span", "class": "nav-btn span"}
+                    ]},
+                    { "tag": "label", "for": "nav-toggle", "class": "nav-overlay"},
                     {"tag": "ul","class": "nav-list","children": [
                         {"tag": "li","class": "na-item","children": [
                             {"tag": "a","class": "nav-link","url": "guide-line.html","text": "ガイドライン"}
