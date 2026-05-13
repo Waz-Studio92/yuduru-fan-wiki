@@ -1,54 +1,49 @@
 {
     "parts": [
-        { "id": "#header", "callback": "setNav" },
-        { "id": "#footer", "callback": null }
-    ],
-    "headerContent": [
-        { "tag": "header", "class": "header", "children":[
-            { "tag": "a", "class": "head-top-link", "url": "index.html", "text": "sandbox" },
-            { "tag": "nav", "class": "nav", "children": [
-                { "tag": "ul", "class": "nav-list", "children": [
-                    { "tag": "li", "class": "na-item", "children":
-                    [
-                        { "tag": "a", "class": "nav-link", "url": "form.html", "text": "FORM" }
-                    ]},
-                    { "tag": "li", "class": "na-item", "children":
-                    [
-                        { "tag": "a", "class": "nav-link", "url": "quiz.html", "text": "QUIZ" }
-                    ]},
-                    { "tag": "li", "class": "na-item", "children":
-                    [
-                        { "tag": "a", "class": "nav-link", "url": "todo.html", "text": "TODO" }
-                    ]},
-                    { "tag": "li", "class": "na-item", "children":
-                    [
-                        { "tag": "a", "class": "nav-link", "url": "contact.html", "text": "CONTACT" }
-                    ]}
-                ] }
-            ]}
-        ]
+        {
+            "id": "#header",
+            "callback": "setNav"
+        },
+        {
+            "id": "#footer",
+            "callback": null
         }
     ],
-    "footerContent": [
-        { "tag": "footer", "class": "footer", "children": [
-            { "tag": "a", "class": "foot-top-link", "url": "index.html", "text": "sandbox" },
-            { "tag": "nav", "class": "foot-nav", "children": [
-                { "tag": "ul", "class": "foot-list", "children": [
-                    { "tag": "li", "class": "foot-item", "children": [
-                        { "tag": "a", "class": "foot-link", "url": "form.html", "text": "FORM" }
-                    ]},
-                    { "tag": "li", "class": "foot-item", "children": [
-                        { "tag": "a", "class": "foot-link", "url": "quiz.html", "text": "QUIZ" }
-                    ]},
-                    { "tag": "li", "class": "foot-item", "children": [
-                        { "tag": "a", "class": "foot-link", "url": "todo.html", "text": "TODO" }
-                    ]},
-                    { "tag": "li", "class": "foot-item", "children": [
-                        { "tag": "a", "class": "foot-link", "url": "contact.html", "text": "CONTACT" }
+    "headerContent": [
+        {"tag": "header","class": "header","children": [
+                {"tag": "a","class": "head-top-link","url": "index.html","children": [
+                    {"tag": "div","class": "top-txt-block","children": [
+                        {"tag": "p","text": "狐乃宮夕絃"},
+                        {"tag": "p","text": "非公式Wiki"}
+                    ]}
+                ]},
+                {"tag": "nav","class": "nav","children": [
+                    {"tag": "ul","class": "nav-list","children": [
+                        {"tag": "li","class": "na-item","children": [
+                            {"tag": "a","class": "nav-link","url": "guide-line.html","text": "ガイドライン"}
+                        ]},
+                            {"tag": "li","class": "na-item","children": [
+                        {"tag": "a","class": "nav-link","url": "song-list.html","text": "SONG LIST"}
                     ]}
                 ]}
             ]}
-        ]},
-        { "tag": "span", "class": "copy", "text": "© 2026 WAZ VIDEO CREATE STUDIO" }
+        ]}
+    ],
+    "footerContent": [
+        {"tag": "footer","class": "footer","children": [
+                {"tag": "a","class": "foot-top-link","url": "index.html","text": "sandbox"},
+                {"tag": "nav","class": "foot-nav","children": [
+                    {"tag": "ul","class": "foot-list","children": [
+                        {"tag": "li","class": "foot-item","children": [
+                            {"tag": "a","class": "foot-link","url": "guide-line.html","text": "ガイドライン"}
+                                    ]},
+                                {"tag": "li","class": "foot-item","children": [
+                            {"tag": "a","class": "foot-link","url": "song-list.html","text": "SONG LIST"}
+                        ]}
+                    ]}
+                ]}
+            ]
+        },
+        {"tag": "span","class": "copy","text": "© 2026 WAZ VIDEO CREATE STUDIO"}
     ]
 }
