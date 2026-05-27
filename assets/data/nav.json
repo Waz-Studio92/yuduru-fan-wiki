@@ -1,13 +1,7 @@
 {
     "parts": [
-        {
-            "id": "#header",
-            "callback": "setNav"
-        },
-        {
-            "id": "#footer",
-            "callback": null
-        }
+        {"id": "#header","callback": "setNav"},
+        {"id": "#footer","callback": null}
     ],
     "headerContent": [
         {"tag": "header","class": "header","children": [
@@ -38,7 +32,12 @@
     ],
     "footerContent": [
         {"tag": "footer","class": "footer","children": [
-                {"tag": "a","class": "foot-top-link","url": "index.html","text": "sandbox"},
+                {"tag": "a","class": "foot-top-link","url": "index.html", "children":[
+                    {"tag": "div", "class": "foot-txt-box", "children":[
+                        {"tag": "p", "text": "狐乃宮夕絃"},
+                        {"tag": "p", "text": "非公式Wiki"}
+                    ]}
+                ]},
                 {"tag": "nav","class": "foot-nav","children": [
                     {"tag": "ul","class": "foot-list","children": [
                         {"tag": "li","class": "foot-item","children": [
