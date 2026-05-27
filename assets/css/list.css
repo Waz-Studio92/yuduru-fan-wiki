@@ -11,6 +11,23 @@
     max-width: 1400px;
 }
 
+.load-svg {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    z-index: 500;
+    opacity: 0;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.load-svg.is-loading {
+    opacity: 1;
+    animation: transform rotate(360deg);
+}
+
 .top-box {
     margin: 0 auto;
     width: 100%;
