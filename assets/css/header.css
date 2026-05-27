@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    box-shadow: 0 14px 20px var(--sub-shadow-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .header {

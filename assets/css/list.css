@@ -7,6 +7,8 @@
 .page-top {
     text-align: left;
     background-color: #eee;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .top-box {
@@ -104,7 +106,6 @@
     margin: 0 auto;
     padding: 0 1rem;
     font-family: Arial;
-    border-bottom: 1px solid #000;
 }
 
 .bump {
