@@ -1,22 +1,22 @@
 @charset "utf-8";
 
 #header {
-    margin: 0 auto;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .header {
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
     background: var(--bg-white);
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
     height: var(--header-height);
+    border-bottom: 1px solid var(--border-color);
     align-items: center;
+    width: 100%;
+    z-index: 100;
 }
 
 .head-top-link {

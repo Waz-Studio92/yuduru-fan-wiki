@@ -4,6 +4,10 @@
 @import url(header.css);
 @import url(footer.css);
 
+body {
+    position: relative;
+}
+
 .page-top {
     text-align: left;
     background-color: #eee;
@@ -13,19 +17,28 @@
 
 .load-svg {
     position: absolute;
-    transform: translate(-50%,-50%);
-    top: 30%;
-    left: 50%;
-    width: 350px;
-    height: 350px;
+    top: 40%;
+    left: 40%;
+    margin: 0 auto;
+    width: 190px;
+    height: 190px;
     z-index: 500;
     opacity: 0;
-    transition: transform .3s ease, opacity .3s ease;
+    transition: transform 1.2s ease, opacity 1.2s ease;
+    overflow: hidden;
+
+    @media (max-width:380px) {
+        left: 20%;
+    }
 }
 
 .load-svg.is-loading {
     opacity: 1;
-    animation: transform rotate(360deg);
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    to{ transform: rotate(360deg);}
 }
 
 .top-box {
