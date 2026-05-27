@@ -118,11 +118,6 @@
 .content-song {
     margin: 1rem auto;
 }
-
-/* .content-song {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    } */
     
 .accordion-title {
     background-color: #555;
@@ -161,6 +156,7 @@
     opacity: 1;
     max-height: 1000px;
     transform: translateY(0);
+    scrollbar-width: thin;
 }
 
 #content-table {
