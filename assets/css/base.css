@@ -13,6 +13,7 @@
 :root {
     --bg-white: #fff;
     --txt-color: #333;
+    --main-color: #333;
     --sub-color: #fff;
     --default-font-size: 15px;
     --default-line-height: 1.5;
@@ -21,6 +22,12 @@
     --sub-shadow-color: rgba(0, 0, 0, .2);
     --border-color: rgba(0, 0, 0, .8);
     --nav-list-width: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+    }
 }
 
 body {
