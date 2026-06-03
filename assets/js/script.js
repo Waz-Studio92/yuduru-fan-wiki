@@ -46,8 +46,6 @@ function createNav(item) {
     gradient.appendChild(endColor);
 
     const circle = document.createElementNS(svgNs,'circle');
-    circle.setAttribute('width','200');
-    circle.setAttribute('height','200');
     circle.setAttribute('cx','95');
     circle.setAttribute('cy','95');
     circle.setAttribute('r','80');
@@ -68,7 +66,6 @@ function createNav(item) {
         
         config.parts.forEach(part => {
 
-            const contentContainerId = part.id.replace('#','');
             const container = document.querySelector(part.id);
 
             const dataKey = part.dataKey;
