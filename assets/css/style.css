@@ -12,6 +12,9 @@ body {
     position: absolute;
     top: 20%;
     left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     width: 190px;
     height: 190px;
@@ -20,7 +23,7 @@ body {
     transition: transform 1.2s ease, opacity 1.2s ease;
     overflow: hidden;
 
-    @media (min-width:380px) {
+    @media (max-width:380px) {
         left: 20%;
     }
 }
@@ -39,6 +42,17 @@ body {
     width: 50%;
     height: auto;
     max-height: 800px;
+
+    @media (min-width:768px) {
+        width: 40%;
+        height: auto;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    @media (min-width:1024px) {
+        margin: 0;
+    }
 }
 
 .main_title {
@@ -145,7 +159,7 @@ body {
 
 .link-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 700px;
     display: grid;
     margin: 1rem auto;
     padding: 0 1rem;
@@ -171,6 +185,16 @@ body {
     display: block;
     width: 100%;
     padding: 0 1em;
+
+    @media (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2em;
+        width: 100%;
+    }
 }
 
 .img_name {
@@ -192,6 +216,11 @@ body {
     margin: 1em 0;
     line-height: 1.8;
     position: relative;
+
+    @media (min-width:768px) {
+        line-height: 1.8;
+        margin: 0;
+    }
 }
 
 .member_list::after {
@@ -202,7 +231,19 @@ body {
 }
 
 .member_name {
+    text-align: left;
     width: 50%;
+
+    @media (min-width:768px) {
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (min-width:1024px) {
+        margin: 0;
+        line-height: 1.8;
+        width: fit-content;
+    }
 }
 
 .img_name,.member_list,
@@ -221,6 +262,10 @@ body {
     width: fit-content;
     text-align: center;
     position: relative;
+
+    @media (min-width:1024px) {
+        text-align: left;
+    }
 }
 
 .member_link::after {
@@ -248,6 +293,21 @@ iframe {
     margin-top: 1em;
     border: none;
     border-radius: 12px;
+
+    @media (min-width:768px) {
+        display: block;
+        width: 90%;
+        margin: 1em 0;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, .14);
+    }
+
+    @media (min-width:1024px) {
+        width: 90%;
+        margin: 2em 0;
+        padding: 0;
+    }
 }
 
 .page-title {
@@ -257,7 +317,9 @@ iframe {
 
 .tags {
     width: 100%;
+    max-width: 800px;
     padding: 0 1rem;
+    margin: 0 auto;
     text-align: left;
 }
 
@@ -302,86 +364,4 @@ iframe {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-}
-
-
-@media screen and (min-width: 768px) {
-
-    .flex-box {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 2em;
-        width: 100%;
-    }
-
-    .style_img {
-        width: 40%;
-        height: auto;
-        margin: 0;
-        object-fit: contain;
-    }
-    
-    .member_list {
-        line-height: 1.8;
-        margin: 0;
-    }
-    
-    .member_name {
-        text-align: left;
-        margin: 0;
-        padding: 0;
-    }
-
-    .video_frame {
-        display: block;
-        width: 90%;
-        margin: 1em 0;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, .14);
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-    
-    .flex-box {
-        text-align: left;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .style_img {
-        margin: 0;
-    }
-
-    .member_list {
-        display: block;
-        justify-content: start;
-        width: fit-content;
-    }
-
-    .member_name {
-        text-align: left;
-        margin: 0;
-        line-height: 1.8;
-        width: fit-content;
-    }
-
-    .member_link {
-        text-align: left;
-    }
-
-    .video_frame {
-        width: 90%;
-        margin: 2em 0;
-        padding: 0;
-    }
-
 }
