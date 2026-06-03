@@ -26,8 +26,20 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-
+        --header-bg: #444;
+        --bg-white: #333;
+        --txt-color: #eee;
+        --main-color: #333;
+        --sub-color: #eee;
+        --main-shadow-color: rgba(255 ,255, 255, .05);
+        --sub-shadow-color: rgba(255 ,255, 255, .1);
+        --border-color: rgba(255 ,255, 255, .2);
     }
+}
+
+html {
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 body {
