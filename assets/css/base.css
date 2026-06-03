@@ -22,11 +22,13 @@
     --sub-shadow-color: rgba(0, 0, 0, .2);
     --border-color: rgba(0, 0, 0, .8);
     --nav-list-width: 50%;
+    --modified-text-color: #333;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --header-bg: #444;
+        --modified-text-color: #333;
         --bg-white: #333;
         --txt-color: #eee;
         --main-color: #333;

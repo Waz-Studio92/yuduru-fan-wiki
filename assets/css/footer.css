@@ -3,14 +3,21 @@
 @import url(base.css);
 
 .footer {
-    background: #fff;
+    background-color: var(--header-bg);
     display: flex;
     flex-direction: column;
     align-items: center ;
     gap: 1em;
     padding: 1em 2rem;
-    margin: 1em auto 0;
+    margin: 0 auto;
     width: 100%;
+
+    @media (min-width:650px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .footer a {
@@ -40,13 +47,20 @@
 .foot-list {
     display: flex;
     flex-direction: column;
+
+    @media (min-width:650px) {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
 }
 
 .copy {
+    background-color: var(--header-bg);
     text-align: center;
     width: 100%;
-    margin: 1em auto;
-    padding-top: 1em;
+    margin: 0 auto;
+    padding: 1em 0;
     border-top: 1px solid var(--border-color);
 }
 

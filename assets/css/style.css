@@ -40,18 +40,13 @@ body {
 .style_img {
     margin: 0 auto;
     width: 50%;
-    height: auto;
     max-height: 800px;
 
-    @media (min-width:768px) {
+    @media (min-width:900px) {
         width: 40%;
-        height: auto;
+        min-height: 500px;
         margin: 0;
         object-fit: contain;
-    }
-
-    @media (min-width:1024px) {
-        margin: 0;
     }
 }
 
@@ -151,7 +146,7 @@ body {
 
 .link-content {
     background-color: var(--bg-white);
-    margin: 0 auto;
+    margin: 1rem auto 0;
     padding: 5px 10px;
     width: fit-content;
     text-align: center;
@@ -187,7 +182,7 @@ body {
     width: 100%;
     padding: 0 1em;
 
-    @media (min-width:768px) {
+    @media (min-width:900px) {
         display: flex;
         flex-direction: row;
         text-align: left;
@@ -216,11 +211,14 @@ body {
 .member_list {
     margin: 1em 0;
     line-height: 1.8;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
     position: relative;
 
-    @media (min-width:768px) {
+    @media (min-width:900px) {
         line-height: 1.8;
-        margin: 0;
+        margin: 0 auto;
     }
 }
 
@@ -232,10 +230,10 @@ body {
 }
 
 .member_name {
-    text-align: left;
-    width: 50%;
+    text-align: center;
+    width: fit-content;
 
-    @media (min-width:768px) {
+    @media (min-width:900px) {
         margin: 0;
         padding: 0;
     }
@@ -295,7 +293,7 @@ iframe {
     border: none;
     border-radius: 12px;
 
-    @media (min-width:768px) {
+    @media (min-width:900px) {
         display: block;
         width: 90%;
         margin: 1em 0;
@@ -325,7 +323,8 @@ iframe {
 }
 
 .tags-txt {
-    background-color: #ccc;
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
     width: fit-content;
     margin: 1rem auto;
     padding: 5px 10px;
