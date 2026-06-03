@@ -1,11 +1,11 @@
 {
     "parts": [
-        {"id": "#header","callback": "setNav"},
-        {"id": "#footer","callback": null}
+        {"id": "#header", "dataKey": "headerContent", "callback": "setNav"},
+        {"id": "#footer", "dataKey": "footerContent", "callback": null}
     ],
     "headerContent": [
         {"tag": "header","class": "header","children": [
-                {"tag": "a","class": "head-top-link","url": "index.html","children": [
+                {"tag": "a","class": "head-top-link","href": "index.html","children": [
                     {"tag": "div","class": "top-txt-block","children": [
                         {"tag": "p","text": "狐乃宮夕絃"},
                         {"tag": "p","text": "非公式Wiki"}
@@ -21,10 +21,10 @@
                     { "tag": "label", "for": "nav-toggle", "class": "nav-overlay"},
                     {"tag": "ul","class": "nav-list","children": [
                         {"tag": "li","class": "na-item","children": [
-                            {"tag": "a","class": "nav-link","url": "guide-line.html","text": "ガイドライン"}
+                            {"tag": "a","class": "nav-link","href": "guide-line.html","text": "ガイドライン"}
                         ]},
                             {"tag": "li","class": "na-item","children": [
-                        {"tag": "a","class": "nav-link","url": "song-list.html","text": "SONG LIST"}
+                        {"tag": "a","class": "nav-link","href": "song-list.html","text": "SONG LIST"}
                     ]}
                 ]}
             ]}
@@ -32,7 +32,7 @@
     ],
     "footerContent": [
         {"tag": "footer","class": "footer","children": [
-                {"tag": "a","class": "foot-top-link","url": "index.html", "children":[
+                {"tag": "a","class": "foot-top-link","href": "index.html", "children":[
                     {"tag": "div", "class": "foot-txt-box", "children":[
                         {"tag": "p", "text": "狐乃宮夕絃"},
                         {"tag": "p", "text": "非公式Wiki"}
@@ -41,10 +41,10 @@
                 {"tag": "nav","class": "foot-nav","children": [
                     {"tag": "ul","class": "foot-list","children": [
                         {"tag": "li","class": "foot-item","children": [
-                            {"tag": "a","class": "foot-link","url": "guide-line.html","text": "ガイドライン"}
+                            {"tag": "a","class": "foot-link","href": "guide-line.html","text": "ガイドライン"}
                                     ]},
                                 {"tag": "li","class": "foot-item","children": [
-                            {"tag": "a","class": "foot-link","url": "song-list.html","text": "SONG LIST"}
+                            {"tag": "a","class": "foot-link","href": "song-list.html","text": "SONG LIST"}
                         ]}
                     ]}
                 ]}
