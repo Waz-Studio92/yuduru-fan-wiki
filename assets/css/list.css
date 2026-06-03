@@ -10,9 +10,10 @@ body {
 
 .page-top {
     text-align: left;
-    background-color: #eee;
+    background-color: var(--bg-white);
     width: 100%;
     max-width: 1400px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .load-svg {

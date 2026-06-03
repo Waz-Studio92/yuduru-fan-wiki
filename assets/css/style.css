@@ -127,8 +127,8 @@ body {
 }
 
 .sns-txt,.sns-text {
-    color: var(--sub-color);
-    z-index: 2;
+    color: var(--txt-color);
+    z-index: 10;
 }
 
 .sns-img,.sns-txt,.sns-text {
@@ -141,7 +141,7 @@ body {
 
 .sns-link:hover .sns-txt,
 .sns-link:hover .sns-text {
-    color: var(--txt-color);
+    color: #333;
 }
 
 .link-sec {
@@ -150,11 +150,12 @@ body {
 }
 
 .link-content {
-    background-color: #ccc;
+    background-color: var(--bg-white);
     margin: 0 auto;
     padding: 5px 10px;
     width: fit-content;
     text-align: center;
+    border: 1px solid var(--border-color);
 }
 
 .link-container {
@@ -346,7 +347,8 @@ iframe {
 
 .tags-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 .tags-content {

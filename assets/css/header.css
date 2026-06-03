@@ -10,7 +10,7 @@
     margin: 0 auto;
     top: 0;
     left: 0;
-    background: var(--bg-white);
+    background: var(--header-bg);
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
