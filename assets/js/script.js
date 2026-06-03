@@ -1,19 +1,20 @@
 function createNav(item) {
-    const el = document.createElement(item.tag); //タグの作成
-    if (item.type) el.type = item.type;
-    if (item.id) el.id = item.id;
-    if (item.for) el.htmlFor = item.for;
-    if (item.class) el.className = item.class; // クラスの付与
-    if (item.url) el.href = item.url; // itemが(a タグなら)URLを付与する
-    if (item.text) el.textContent = `${item.text}`; // 中の文字を付与
+    const { tag, text, children, ...attrs } = item;
+    const el = document.createElement(tag);
 
-    if (item.children) {
-        item.children.forEach(child => {
-            const childEl = createNav(child);
-            el.appendChild(childEl);
-        });
+    Object.entries(attrs).forEach(([key, value]) => {
+
+        if (value) {
+            el.setAttribute(key, value);
+        }
+    });
+    
+    if (text) el.textContent = text;
+
+    if (children) {
+        children.forEach(child => el.append(createNav(child)));
     }
-    return el; // 出来た要素を返す
+    return el;
 }
 
     document.addEventListener('DOMContentLoaded', async () => {
@@ -45,7 +46,6 @@ function createNav(item) {
     gradient.appendChild(endColor);
 
     const circle = document.createElementNS(svgNs,'circle');
-    circle.setAttribute('viewBox','0 0 0 0');
     circle.setAttribute('width','200');
     circle.setAttribute('height','200');
     circle.setAttribute('cx','95');
@@ -62,18 +62,21 @@ function createNav(item) {
 
     try {
         // 1. 設定ファイルの読み込み
-        const configResponse = await fetch('./assets/data/nav.json');
-        if (!configResponse.ok) throw new Error('Config load failed');
-        const config = await configResponse.json();
+        const response = await fetch('./assets/data/nav.json');
+        if (!response.ok) throw new Error('Config load failed');
+        const config = await response.json();
         
-        config.headerContent.forEach(item => {
-            const el = createNav(item);
-            document.getElementById('header').appendChild(el);
-        });
-        
-        config.footerContent.forEach(item => {
-            const el = createNav(item);
-            document.getElementById('footer').appendChild(el);
+        config.parts.forEach(part => {
+
+            const contentContainerId = part.id.replace('#','');
+            const container = document.querySelector(part.id);
+
+            const dataKey = part.dataKey;
+            const dataList = config[dataKey];
+
+            if (container && dataList) {
+                dataList.forEach(data => container.appendChild(createNav(data)))
+            }
         });
 
         setTimeout(() => {
@@ -85,6 +88,16 @@ function createNav(item) {
         }, 1200);
     } catch (e) {
         console.error(e)
+        
+        const errorText = document.createElement('p');
+        errorText.className = 'error-text';
+        errorText.textContent = 'データの読み込みに失敗しました。後でもう一度お試しください。';
+        
+        document.body.appendChild(errorText);
+        
+        setTimeout(() => {
+            document.body.classList.add("is-show");
+        }, 100);
 
         setTimeout(() => {
             svg.classList.remove('is-loading');
