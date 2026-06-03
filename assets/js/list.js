@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // <div id="song-list-body"></div>を探しに行く
     const container = document.getElementById('song-list-body');
-    // 見つからなければ終わり
+    // 見つかったら実行
     if (!container) return;
 
     try {
-        //外部のJSONファイルを読みに行く
-        const configResponse = await fetch('./assets/data/list.json');
-        if (!configResponse.ok) throw new Error('config load failed');
-        const data = await configResponse.json()
+        const Response = await fetch('./assets/data/list.json');
+        if (!Response.ok) throw new Error('config load failed');
+        const data = await Response.json()
         const songs = data.songs;
 
         // 曲のソート
@@ -46,6 +45,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
     } catch (e) {
-        console.log("処理中にエラーが発生しました", e);
+        console.log("何らかの要因で処理中にエラーが発生しました", e);
+
+        const errorText = document.createElement('p');
+        errorText.className = 'error-text';
+        errorText.textContent = '何らかの要因で処理中にエラーが発生しました。後でもう一度お試しください。';
+
+        document.body.appendChild(errorText);
     }
 });
