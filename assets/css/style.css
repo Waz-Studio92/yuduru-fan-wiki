@@ -95,7 +95,7 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    margin: 0 auto;
+    margin: 1rem auto 0;
 }
 
 .sns-link::after {
@@ -122,7 +122,7 @@ body {
 }
 
 .sns-txt,.sns-text {
-    color: var(--txt-color);
+    color: var(--link-txt-color);
     z-index: 10;
 }
 
@@ -146,7 +146,7 @@ body {
 
 .link-content {
     background-color: var(--bg-white);
-    margin: 1rem auto 0;
+    margin: 1rem auto;
     padding: 5px 10px;
     width: fit-content;
     text-align: center;

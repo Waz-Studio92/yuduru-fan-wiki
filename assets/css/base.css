@@ -13,14 +13,17 @@
 :root {
     --bg-white: #fff;
     --txt-color: #333;
+    --link-txt-color: #fff;
     --main-color: #333;
     --sub-color: #fff;
     --default-font-size: 15px;
     --default-line-height: 1.5;
+    --header-bg: #fcfdfc;
     --header-height: 72px;
     --main-shadow-color: rgba(0, 0, 0, .14);
     --sub-shadow-color: rgba(0, 0, 0, .2);
     --border-color: rgba(0, 0, 0, .8);
+    --nav-span-color: #000;
     --nav-list-width: 50%;
     --modified-text-color: #333;
 }
@@ -31,8 +34,10 @@
         --modified-text-color: #333;
         --bg-white: #333;
         --txt-color: #eee;
+        --link-txt-color: #eee;
         --main-color: #333;
         --sub-color: #eee;
+        --nav-span-color: #eee;
         --main-shadow-color: rgba(255 ,255, 255, .05);
         --sub-shadow-color: rgba(255 ,255, 255, .1);
         --border-color: rgba(255 ,255, 255, .2);
